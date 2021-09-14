@@ -1,9 +1,11 @@
-endpoint: ${env:URL_BASE}/default/${env:ENVIROMENT}
+endpoint: ${env:URL_BASE}/pyt/${env:ENVIROMENT}
 databaseType: document
 datamodel:
-  - ./models/user.prisma
+  - ./models/movie.prisma
   - ./models/order.prisma
-  - ./models/Node.prisma
+  - ./models/room.prisma
+  - ./models/schedule.prisma
+  - ./models/user.prisma
 
 generate:
   - generator: typescript-client
